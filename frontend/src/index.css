@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-copper-50: #fdf8f6;
+  --color-copper-100: #f8ebe6;
+  --color-copper-200: #f1d4c9;
+  --color-copper-300: #e6b5a3;
+  --color-copper-400: #d98f73;
+  --color-copper-500: #ce704e;
+  --color-copper-600: #c05636;
+  --color-copper-700: #a0432a;
+  --color-copper-800: #803825;
+  --color-copper-900: #673021;
+  --color-copper-950: #36160d;
+  --color-dark-800: #1F2937;
+  --color-dark-900: #111827;
+  --color-dark-700: #374151;
+}
+
+body {
+  background-color: var(--color-dark-900);
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}

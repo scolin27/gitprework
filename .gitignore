@@ -1,0 +1,25 @@
+# ─── Secrets / environment ──────────────────────
+.env
+.env.local
+GEMINI_API_KEY=*
+
+# ─── Python ─────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ─── Database ───────────────────────────────────
+*.db
+inventory.db
+
+# ─── Node / frontend ────────────────────────────
+node_modules/
+dist/
+.vite/
+
+# ─── OS / editor ────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
