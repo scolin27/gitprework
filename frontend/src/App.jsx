@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { useAppStore } from "./store";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://gitprework-production.up.railway.app";
 const PAGE_SIZE = 20;
 
 // ─── helpers ────────────────────────────────────────────────
