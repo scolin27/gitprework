@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { useAppStore } from "./store";
 
-const API = "https://gitprework-production.up.railway.app";
+const API = "https://web-production-f6942.up.railway.app";
 const PAGE_SIZE = 20;
 
 // ─── helpers ────────────────────────────────────────────────
