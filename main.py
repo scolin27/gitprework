@@ -278,9 +278,19 @@ app = FastAPI(
     version="3.0.0",
 )
 
+# Origenes permitidos: el frontend de produccion y el dev local.
+# Se puede sobreescribir con la env var ALLOWED_ORIGINS (lista separada por comas).
+_default_origins = [
+    "https://gitprework-production-e97c.up.railway.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
+_env_origins = os.getenv("ALLOWED_ORIGINS", "")
+allowed_origins = [o.strip() for o in _env_origins.split(",") if o.strip()] or _default_origins
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
     allow_methods=["*"],
     allow_headers=["*"],
 )
